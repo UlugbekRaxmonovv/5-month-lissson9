@@ -173,7 +173,7 @@ span{
 
     .menu{
         position: absolute;
-        top: 15px;
+        top: 20px;
         left: -10%;
         right:-10px;
     }
@@ -218,6 +218,19 @@ span{
         height: 50px;
     }
     
+
+   
+}
+
+
+@media(max-width:330px){
+
+    .menu{
+        position: absolute;
+        top: 20px;
+        left: -5%;
+        right:-10px;
+    }
 
    
 }

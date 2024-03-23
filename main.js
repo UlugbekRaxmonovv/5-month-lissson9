@@ -1,6 +1,6 @@
 const menu = document.querySelector('.menu')
 const nav = document.querySelector('nav')
-const logo = document.querySelector('.btn2')
+const logo = document.querySelector('.btn1')
 // const navlogo = document.querySelector('.nav-logo')
 
 
@@ -10,6 +10,35 @@ menu.addEventListener('click', ()=>{
 logo.addEventListener('click', ()=>{
     nav.classList.toggle('gogle')
 })
+
+
+// light-dark
+let modeBtn = document.getElementById("light-dark");
+
+modeBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+});
+
+
+// backtop
+
+window.addEventListener('scroll', function () {
+    toggleBacktop();
+  });
+  
+  let backtop = document.getElementById('backtop');
+  
+  function toggleBacktop() {
+    if (
+      document.body.scrollTop > 100 ||
+      document.documentElement.scrollTop > 200
+    ) {
+      backtop.style.bottom = '20px';
+    } else {
+      backtop.style.bottom = '-50px';
+    }
+  }
+
 
 
 const section =document.querySelector('.CardAll')
@@ -65,11 +94,11 @@ function card(son){
                     <span class="p">0 otzivov</span>
                 </div>
             </div>
-            <h1>1 309 000</h1>
+            <h1>${products.price}</h1>
 
             <div class="all">
                 <div class="all-list">
-                    <div class="al1">Kupite sychas</div>
+                    <div class="al1">${products.category}</div>
                 </div>
                 <div class="all-list">
                     <div class="al2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: white"><circle cx="10.5" cy="19.5" r="1.5"></circle><circle cx="17.5" cy="19.5" r="1.5"></circle><path d="M21 7H7.334L6.18 4.23A1.995 1.995 0 0 0 4.333 3H2v2h2.334l4.743 11.385c.155.372.52.615.923.615h8c.417 0 .79-.259.937-.648l3-8A1.003 1.003 0 0 0 21 7zm-4 6h-2v2h-2v-2h-2v-2h2V9h2v2h2v2z"></path></svg></div>

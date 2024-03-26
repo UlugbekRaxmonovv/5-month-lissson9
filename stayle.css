@@ -68,13 +68,16 @@ body{
     /* transform: rotateY(-100%,100%); */
 }
 
-
+.work{
+    background-color: white;
+}
 
 header{
     background-color: white;
-
-   
+    z-index: 200; 
+ 
 }
+
 nav{
     background-color: white;
     position: fixed;
@@ -211,40 +214,13 @@ span{
     display: none;
 }
 
-
-/* .loaing{
-    width: 350px;
-    height: 450px;
-    background-color: rgb(248, 246, 246);
-} 
-
-*/
-.loading-all{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-}
 .loader {
-   position: absolute;
-   top: 50%;
-   left: 45%;
-    max-width: 1340px;
-    margin: 0 auto;
-    border: 16px solid #f3f3f3;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
     border-radius: 50%;
-    border-top: 16px solid blue;
-    border-right: 16px solid green;
-    border-bottom: 16px solid red;
     width: 120px;
     height: 120px;
-    -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
   }
   
   @keyframes spin {
@@ -252,7 +228,71 @@ span{
     100% { transform: rotate(360deg); }
   }
 
+  .loader1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+   margin-top: 50%;
+    /* gap: 20px; */
+  }
 
+.container{
+    max-width: 1340px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    
+
+}
+.all1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+  .card1 {
+    width: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .card__content {
+    padding: 20px;
+  }
+  @keyframes shine {
+    to {
+      background-position-x: -200%;
+    }
+  }
+
+  .card__image,
+h2,
+h5 {
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  animation: 1s shine linear infinite;
+}
+.card__image {
+  height: 200px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card__content {
+  padding: 20px;
+}
+h3{
+  height: 30px;
+}
+h5 {
+  height: 70px;
+  width: 80%;
+}
 
 .CardAll{
     max-width: 1340px;
@@ -445,7 +485,9 @@ h1{
         border: 3px solid blue;
         border-radius: 15px;
     }
+  
     input{
+        width: 100%;
         outline: none;
         border: none;
         background-color: white;
@@ -512,6 +554,7 @@ h1{
         left: -5%;
         right:-10px;
     }
+
 
     .CardAll{
         max-width: 1340px;

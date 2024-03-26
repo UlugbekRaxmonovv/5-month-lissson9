@@ -42,7 +42,7 @@ window.addEventListener('scroll', function () {
 
 
 const section =document.querySelector('.CardAll')
-const loader  =document.querySelector('.loader')
+const loader  =document.querySelector('.all1')
 const ApiUrl= 'https://fakestoreapi.com/products' 
 
 async function good(api){
@@ -51,7 +51,7 @@ async function good(api){
     .json()
     .then(ris => card(ris))
     .catch(irr => console.log(irr))
-    .finally(() =>{
+    .finally(()=>{
         loader.style.display = 'none'
     })
 
@@ -73,7 +73,7 @@ function card(son){
            <div class="hammasi-row">
                <p class="box">Novinka</p>
            </div>
-           <div class="hammasi-row">
+           <div class="hammasi-row">    
            <img src="${products.image}" alt="">
            </div>
            <div class="hammasi-all">

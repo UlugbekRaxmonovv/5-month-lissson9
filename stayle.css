@@ -81,7 +81,7 @@ body{
 
 header{
     background-color: white;
-    z-index: 200; 
+    z-index: 1000; 
  
 }
 
@@ -167,6 +167,9 @@ svg:hover{
 }
 span:hover{
     color: blue;
+}
+.logo-link >span{
+    font-size: 15px;
 }
 .logo-link:hover{
     color: blue;

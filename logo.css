@@ -360,8 +360,20 @@ h5 {
   .Arr{
      text-align: center;
     display:none;
+    height: 100vh;
   
 
+  }
+  .Arr >img{
+    max-width: 600px;
+    width: 100%;
+
+  }
+  .Arr>h1{
+    font-size: 100px;
+  }
+  .Arr >h6{
+    font-size: 20px;
   }
  
 

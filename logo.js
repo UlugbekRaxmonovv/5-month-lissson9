@@ -69,6 +69,8 @@ column.addEventListener('click', ()=>{
 })
 
 
+
+
 const Arr =document.querySelector('.Arr')
 let ApiUrl = 'https://fakestoreapi.com/products'
 const loader  =document.querySelector('.all1')

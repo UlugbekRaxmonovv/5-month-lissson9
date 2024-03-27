@@ -168,6 +168,10 @@ svg:hover{
 span:hover{
     color: blue;
 }
+
+.logo-link >span{
+    font-size: 15px;
+}
 .logo-link:hover{
     color: blue;
 }
@@ -348,9 +352,15 @@ h5 {
   }
 
 
+
+  /* .array{
+    height: 100vh;
+    background-color: white;
+  } */
   .Arr{
      text-align: center;
     display:none;
+  
 
   }
  
@@ -652,15 +662,14 @@ svg:hover{
 }
 
 .button-bottom{
-    display:none;
-    /* display: flex;
+    /* display:none; */
+    display: flex;
     justify-content: center;
-    align-items: center; */
+    align-items: center;
  
 
 }
 .button-bottom-list{
-   
     width: 240px;
     padding: 12px 0;
     background-color:chocolate ;
@@ -682,6 +691,7 @@ svg:hover{
     align-items: center;
     padding: 40px 0;
     gap: 110px;
+  
 }
 
 .box-nav-go{
@@ -708,7 +718,7 @@ svg:hover{
 
 
 .button-bottomm{
-    display: none;
+    /* display: none; */
    margin-top: 40px;
    padding: 0px 20px;
    
